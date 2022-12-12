@@ -1,3 +1,78 @@
 * {
   box-sizing: border-box;
 }
+
+.example-1 {
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media print {
+  .example-1 {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .example-1 {
+    background-color: rgb(45, 137, 37);
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .example-1 {
+    font-size: 14px;
+  }
+}
+
+.example-2 {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+
+@media screen and (min-width: 400px) and (max-width:599px) {
+  .example-2 {
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-widrth:799px) {
+  .example-2 {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width:999px) {
+  .example-2 {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(25, 85, 138);
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1199px) {
+  .example-2 {
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .example-2 {
+    width: 120px;
+    height: 120px;
+    background-color: crimson;
+  }
+}
